@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo_4</title>
+    <script type="text/javascript" src="demo_4.js" ></script>
+    <style>
+        .chessboard {border-spacing: 0}
+        .chessboard .white {background-color: white}
+        .chessboard .black {background-color: black}
+        .chessboard .blue {background-color: blue}
+        .chessboard .green {background-color: green}
+        .chessboard td {width: 3em; height: 3em; border: 0px}
+    </style>
+</head>
+<body>
+<p>
+    Показывет варианты хода конем.
+</p>
+<table class="chessboard">
+    <tbody>
+    <tr>
+        <th>8</th>
+        <td class="white" onclick="clickN('A8')" id="A8"></td>
+        <td class="black" onclick="clickN('B8')" id="B8"></td>
+        <td class="white" onclick="clickN('C8')" id="C8"></td>
+        <td class="black" onclick="clickN('D8')" id="D8"></td>
+        <td class="white" onclick="clickN('E8')" id="E8"></td>
+        <td class="black" onclick="clickN('F8')" id="F8"></td>
+        <td class="white" onclick="clickN('G8')" id="G8"></td>
+        <td class="black" onclick="clickN('H8')" id="H8"></td>
+    </tr>
+    <tr>
+        <th>7</th>
+        <td class="black" onclick="clickN('A7')" id="A7"></td>
+        <td class="white" onclick="clickN('B7')" id="B7"></td>
+        <td class="black" onclick="clickN('C7')" id="C7"></td>
+        <td class="white" onclick="clickN('D7')" id="D7"></td>
+        <td class="black" onclick="clickN('E7')" id="E7"></td>
+        <td class="white" onclick="clickN('F7')" id="F7"></td>
+        <td class="black" onclick="clickN('G7')" id="G7"></td>
+        <td class="white" onclick="clickN('H7')" id="H7"></td>
+    </tr>
+    <tr>
+        <th>6</th>
+        <td class="white" onclick="clickN('A6')" id="A6"></td>
+        <td class="black" onclick="clickN('B6')" id="B6"></td>
+        <td class="white" onclick="clickN('C6')" id="C6"></td>
+        <td class="black" onclick="clickN('D6')" id="D6"></td>
+        <td class="white" onclick="clickN('E6')" id="E6"></td>
+        <td class="black" onclick="clickN('F6')" id="F6"></td>
+        <td class="white" onclick="clickN('G6')" id="G6"></td>
+        <td class="black" onclick="clickN('H6')" id="H6"></td>
+    </tr>
+    <tr>
+        <th>5</th>
+        <td class="black" onclick="clickN('A5')" id="A5"></td>
+        <td class="white" onclick="clickN('B5')" id="B5"></td>
+        <td class="black" onclick="clickN('C5')" id="C5"></td>
+        <td class="white" onclick="clickN('D5')" id="D5"></td>
+        <td class="black" onclick="clickN('E5')" id="E5"></td>
+        <td class="white" onclick="clickN('F5')" id="F5"></td>
+        <td class="black" onclick="clickN('G5')" id="G5"></td>
+        <td class="white" onclick="clickN('H5')" id="H5"></td>
+    </tr>
+    <tr>
+        <th>4</th>
+        <td class="white" onclick="clickN('A4')" id="A4"></td>
+        <td class="black" onclick="clickN('B4')" id="B4"></td>
+        <td class="white" onclick="clickN('C4')" id="C4"></td>
+        <td class="black" onclick="clickN('D4')" id="D4"></td>
+        <td class="white" onclick="clickN('E4')" id="E4"></td>
+        <td class="black" onclick="clickN('F4')" id="F4"></td>
+        <td class="white" onclick="clickN('G4')" id="G4"></td>
+        <td class="black" onclick="clickN('H4')" id="H4"></td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <td class="black" onclick="clickN('A3')" id="A3"></td>
+        <td class="white" onclick="clickN('B3')" id="B3"></td>
+        <td class="black" onclick="clickN('C3')" id="C3"></td>
+        <td class="white" onclick="clickN('D3')" id="D3"></td>
+        <td class="black" onclick="clickN('E3')" id="E3"></td>
+        <td class="white" onclick="clickN('F3')" id="F3"></td>
+        <td class="black" onclick="clickN('G3')" id="G3"></td>
+        <td class="white" onclick="clickN('H3')" id="H3"></td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <td class="white" onclick="clickN('A2')" id="A2"></td>
+        <td class="black" onclick="clickN('B2')" id="B2"></td>
+        <td class="white" onclick="clickN('C2')" id="C2"></td>
+        <td class="black" onclick="clickN('D2')" id="D2"></td>
+        <td class="white" onclick="clickN('E2')" id="E2"></td>
+        <td class="black" onclick="clickN('F2')" id="F2"></td>
+        <td class="white" onclick="clickN('G2')" id="G2"></td>
+        <td class="black" onclick="clickN('H2')" id="H2"></td>
+    </tr>
+    <tr>
+        <th>1</th>
+        <td class="black" onclick="clickN('A1')" id="A1"></td>
+        <td class="white" onclick="clickN('B1')" id="B1"></td>
+        <td class="black" onclick="clickN('C1')" id="C1"></td>
+        <td class="white" onclick="clickN('D1')" id="D1"></td>
+        <td class="black" onclick="clickN('E1')" id="E1"></td>
+        <td class="white" onclick="clickN('F1')" id="F1"></td>
+        <td class="black" onclick="clickN('G1')" id="G1"></td>
+        <td class="white" onclick="clickN('H1')" id="H1"></td>
+    </tr>
+    <tr>
+        <th></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
